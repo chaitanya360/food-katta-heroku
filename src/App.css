@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+:root {
+  --grd-hero-bg: linear-gradient(
+    49deg,
+    rgba(255, 245, 235, 1) 45%,
+    rgba(255, 215, 237, 1) 100%
+  );
+
+  --grd-hero-title: linear-gradient(
+    131deg,
+    rgba(255, 70, 114, 1) 1%,
+    rgba(255, 193, 80, 1) 90%
+  );
+  --grd-hero-sub-title: linear-gradient(
+    131deg,
+    rgba(255, 69, 134, 1) 45%,
+    rgba(255, 169, 109, 1) 100%
+  );
+  --grd-hero-buy-btn-bg: linear-gradient(
+    55deg,
+    rgba(255, 66, 115, 1) 14%,
+    rgba(255, 193, 80, 1) 100%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grd-text {
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: "Work Sans", sans-serif;
 }
