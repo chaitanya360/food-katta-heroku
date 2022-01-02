@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeroSectionStyle = styled.section`
   background: var(--grd-hero-bg);
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 3fr 2fr;
 
@@ -85,13 +85,18 @@ export const HeroSectionStyle = styled.section`
       padding: 0 1rem;
 
       .title {
-        font-size: 4rem;
-        line-height: 80px;
+        font-size: 3rem;
+        line-height: 50px;
       }
 
       .sub-title {
-        font-size: 5rem;
+        font-size: 4rem;
       }
     }
   }
+`;
+
+export const HeaderStyle = styled.header`
+  display: flex;
+  flex-direction: column;
 `;
