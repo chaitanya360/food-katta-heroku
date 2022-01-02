@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HeaderBottomStyle } from "./molecules.style";
 
 function HeaderBottom(props) {
@@ -11,8 +12,12 @@ function HeaderBottom(props) {
         <span>Shop by Foor Brands</span>
       </div>
       <div className="logins">
-        <span>Login</span>
-        <span>Sign Up</span>
+        <Link className="text-link" to="/login">
+          <span>Login</span>
+        </Link>
+        <Link className="text-link" to="/register">
+          <span>Sign Up</span>
+        </Link>
       </div>
     </HeaderBottomStyle>
   );

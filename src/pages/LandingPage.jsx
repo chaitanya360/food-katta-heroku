@@ -1,6 +1,6 @@
 import React from "react";
-import HeroSection from "../organisms/HeroSection";
 import { LandingPageStyle } from "./pages.style";
+import HeroSection from "../components/organisms/HeroSection";
 
 function LandingPage(props) {
   return (
