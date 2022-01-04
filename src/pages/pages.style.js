@@ -20,7 +20,7 @@ export const FormStyle = styled.form`
 
   .field {
     max-width: 700px;
-    margin: auto;
+    margin: 20px auto;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
