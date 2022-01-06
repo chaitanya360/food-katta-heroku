@@ -3,7 +3,11 @@ import Router from "./Router";
 // import "./assets/scss/auth.scss";
 
 function App() {
-  return <Router />;
+  return (
+    <div style={{ minHeight: "100vh" }}>
+      <Router />
+    </div>
+  );
 }
 
 export default App;

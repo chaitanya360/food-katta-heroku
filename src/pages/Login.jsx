@@ -55,48 +55,59 @@ function Login(props) {
 
   return (
     <FormStyle onSubmit={handleLogin}>
-      <div className="title">User Login</div>
-      <div className="field">
-        <span className="label-wrapper">
-          <label>User Name :</label>
-        </span>
-        <span>
-          <input
-            placeholder="User Name"
-            type="text"
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
-            onBlur={() => validateUsername()}
-          />
-          {usernameError.map((error) => (
-            <span className="error-msg">{error}</span>
-          ))}
-        </span>
-      </div>
-      <div className="field">
-        <span className="label-wrapper">
-          <label>Password :</label>
-        </span>
-        <span>
-          <input
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            onBlur={() => validatePassword()}
-          />
-          {passwordError.map((error) => (
-            <span className="error-msg">{error}</span>
-          ))}
-        </span>
-      </div>
-      <div className="submit-wrapper">
-        <button type="submit" className="submit-btn">
-          Log In
-        </button>
-      </div>
-      <div className="alternative">
-        Don't Have An Account ?<Link to="/register">register</Link>
+      <div>
+        <div className="logo">FoodKatta</div>
+        <div className="form-container">
+          <div className="fields-wrapper">
+            <div className="title">Sign In</div>
+            <div className="sub-title">Login to manage your account</div>
+            <div className="field">
+              <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/user.svg`} />
+                <input
+                  placeholder="User Name"
+                  type="text"
+                  value={userName}
+                  onChange={(e) => setUserName(e.target.value)}
+                  onBlur={() => validateUsername()}
+                />
+                {usernameError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))}
+              </span>
+            </div>
+            <div className="field">
+              <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/key.svg`} />
+                <input
+                  placeholder="Password"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  onBlur={() => validatePassword()}
+                />
+                {passwordError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))}
+              </span>
+            </div>
+            <div className="tnc">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </div>
+            <div className="submit-wrapper">
+              <button type="submit" className="submit-btn">
+                Log In
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="alternative">
+          Don't Have An Account ?<Link to="/register">Sign up</Link>
+          <div style={{ marginTop: "10px" }}>
+            <a>Forgot Password ?</a>
+          </div>
+        </div>
       </div>
     </FormStyle>
   );

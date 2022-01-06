@@ -112,100 +112,104 @@ function Register(props) {
 
   return (
     <FormStyle onSubmit={handleRegister}>
-      <div className="title">User Registration</div>
-      <div className="field">
-        <span className="label-wrapper">
-          <label>User Name :</label>
-        </span>
-        <span>
-          <input
-            placeholder="User Name"
-            type="text"
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
-            onBlur={() => validateUsername()}
-          />
-          {usernameError.map((error) => (
-            <span className="error-msg">{error}</span>
-          ))}
-        </span>
-      </div>
-      <div className="field">
-        <span className="label-wrapper">
-          <label>Email :</label>
-        </span>
-        <span>
-          <input
-            placeholder="Email"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            onBlur={() => validateEmail()}
-          />
-          {emailError.map((error) => (
-            <span className="error-msg">{error}</span>
-          ))}
-        </span>
-      </div>
+      <div>
+        <div className="logo">FoodKatta</div>
+        <div className="form-container">
+          <div className="fields-wrapper">
+            <div className="title">Create your account?</div>
+            <div className="sub-title">
+              Create an account to explore your favourite food.
+            </div>
+            <div className="field">
+              <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/user.svg`} />
+                <input
+                  placeholder="User Name"
+                  type="text"
+                  value={userName}
+                  onChange={(e) => setUserName(e.target.value)}
+                  onBlur={() => validateUsername()}
+                />
+                {usernameError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))}
+              </span>
+            </div>
+            <div className="field">
+              <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/mail.svg`} />
+                <input
+                  placeholder="Email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  onBlur={() => validateEmail()}
+                />
+                {emailError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))}
+              </span>
+            </div>
 
-      <div className="field">
-        <span className="label-wrapper">
-          <label>Password :</label>
-        </span>
-        <span>
-          <input
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            onBlur={() => validatePassword()}
-          />
-          {passwordError.map((error) => (
-            <span className="error-msg">{error}</span>
-          ))}
-        </span>
-      </div>
-      <div className="field">
-        <span className="label-wrapper">
-          <label>Re-enter Your Password :</label>
-        </span>
-        <span>
-          <input
-            placeholder="Password"
-            type="password"
-            value={rePassword}
-            onChange={(e) => setRePassword(e.target.value)}
-            onBlur={() => validateRePassword()}
-          />
-          {rePasswordError.map((error) => (
-            <span className="error-msg">{error}</span>
-          ))}
-        </span>
-      </div>
-      <div className="field">
-        <span className="label-wrapper">
-          <label>Mobile :</label>
-        </span>
-        <span>
-          <input
-            placeholder="Mobile Number"
-            type="text"
-            value={number}
-            onChange={(e) => setnumber(e.target.value)}
-            onBlur={() => validateNumber()}
-          />
-          {numberError.map((error) => (
-            <span className="error-msg">{error}</span>
-          ))}
-        </span>
-      </div>
-      <div className="submit-wrapper">
-        <button type="submit" className="submit-btn">
-          Register
-        </button>
-      </div>
-      <div className="alternative">
-        Already Have An Account ?<Link to="/login">login</Link>
+            <div className="field">
+              <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/key.svg`} />
+                <input
+                  placeholder="Password"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  onBlur={() => validatePassword()}
+                />
+                {passwordError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))}
+              </span>
+            </div>
+            <div className="field">
+              <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/key.svg`} />
+                <input
+                  placeholder="Password"
+                  type="password"
+                  value={rePassword}
+                  onChange={(e) => setRePassword(e.target.value)}
+                  onBlur={() => validateRePassword()}
+                />
+                {rePasswordError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))}
+              </span>
+            </div>
+            <div className="field">
+              <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/phone.svg`} />
+                <input
+                  placeholder="Mobile Number"
+                  type="text"
+                  value={number}
+                  onChange={(e) => setnumber(e.target.value)}
+                  onBlur={() => validateNumber()}
+                />
+                {numberError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))}
+              </span>
+            </div>
+            <div className="tnc">
+              <input type="checkbox" />
+              <span>I agree to the terms & conditions</span>
+            </div>
+            <div className="submit-wrapper">
+              <button type="submit" className="submit-btn">
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="alternative">
+          Already Have An Account ?<Link to="/login">Sign in</Link>
+        </div>
       </div>
     </FormStyle>
   );
