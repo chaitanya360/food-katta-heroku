@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --clr-primary: #f85220;
 
@@ -43,4 +49,10 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+}
+
+.no-dec {
+  text-decoration: none;
+  color: inherit;
+  box-shadow: none;
 }

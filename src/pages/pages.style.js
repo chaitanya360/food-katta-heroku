@@ -7,6 +7,8 @@ export const LandingPageStyle = styled.section`
 export const FormStyle = styled.form`
   background: var(--grd-form-pink-bg);
   min-height: 100vh;
+  padding: 1rem 0;
+  height: 100%;
   width: 100%;
   /* max-width: 700px; */
 
@@ -40,10 +42,23 @@ export const FormStyle = styled.form`
   }
 
   .fields-wrapper {
+    max-width:500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
+    margin: auto;
+
+
+    .field-bundler{
+      display: flex;
+      
+      .field{
+        margin-right: 0.5rem;
+      }
+    }
+
+
   }
 
   .field {
@@ -70,16 +85,17 @@ export const FormStyle = styled.form`
         height: 20px;
         position: absolute;
         top: 50%;
-        transform: translateY(-10px);
+        transform: translateY(-8px);
         left: 0.8rem;
       }
     }
 
-    input {
+    input,textarea {
       padding: 0.5rem 1rem;
       padding-left: 2.5rem;
+      padding-right: 0
       font-size: 1rem;
-      width: 80%;
+      width: 100%;
       background-color: var(--clr-form-input-bg);
       border-color: transparent;
       border-radius: 0.7rem;
@@ -107,7 +123,7 @@ export const FormStyle = styled.form`
       padding: 0.4rem 0rem;
       border-radius: 1rem;
       border-color: transparent;
-      width: 100%;
+      width: 99%;
       box-shadow: none;
       cursor: pointer;
 

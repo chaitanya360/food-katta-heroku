@@ -210,6 +210,9 @@ function Register(props) {
         <div className="alternative">
           Already Have An Account ?<Link to="/login">Sign in</Link>
         </div>
+        <div className="alternative">
+          Are You a Seller ?<Link to="/seller-register">Register here</Link>
+        </div>
       </div>
     </FormStyle>
   );

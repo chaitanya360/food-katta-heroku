@@ -14,24 +14,40 @@ export const HeaderBottomStyle = styled.div`
 `;
 
 export const HeaderTopStyle = styled.div`
-  height: 5rem;
+  min-height: 5rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 0 2rem;
+
+  .auth {
+    display: flex;
+    div {
+      margin: 0 1rem;
+    }
+  }
 `;
 
 export const SearchBarStyle = styled.div`
   display: flex;
-  height: 3rem;
+  height: 2.5rem;
   margin: auto;
+  max-width: 600px;
+  width: 100%;
   input {
-    width: 600px;
+    heigth: 100%;
+    max-width: 600px;
+    width: 100%;
     border-radius: 5px 0 0 5px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    border-width: 1px;
+    padding-left: 1rem;
   }
   .search-icon {
     height: 100%;
-    background-color: #e32619;
+    background-color: var(--clr-primary);
     display: flex;
     justify-content: center;
     align-items: center;
