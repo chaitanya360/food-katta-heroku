@@ -97,6 +97,11 @@ export const HeroSectionStyle = styled.section`
 `;
 
 export const HeaderStyle = styled.header`
+  position: sticky;
+  background-color: white;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  top: 0;
   display: flex;
+  z-index: 999;
   flex-direction: column;
 `;

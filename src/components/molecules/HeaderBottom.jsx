@@ -6,18 +6,14 @@ function HeaderBottom(props) {
   return (
     <HeaderBottomStyle>
       <div className="category">
-        <span>Sweets</span>
-        <span>Snacks</span>
-        <span>Staples</span>
-        <span>Shop by Foor Brands</span>
-      </div>
-      <div className="logins">
-        <Link className="text-link" to="/login">
-          <span>Login</span>
-        </Link>
-        <Link className="text-link" to="/register">
-          <span>Sign Up</span>
-        </Link>
+        <ul>
+          <li>Sweets</li>
+          <li>Snacks</li>
+          <li>Staples 1</li>
+          <li>Staples 2</li>
+          <li>Staples 3</li>
+          <li>Shop by Foor Brands</li>
+        </ul>
       </div>
     </HeaderBottomStyle>
   );

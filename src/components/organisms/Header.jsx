@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <HeaderStyle>
       <HeaderTop />
-      {/* <HeaderBottom /> */}
+      <HeaderBottom />
     </HeaderStyle>
   );
 }

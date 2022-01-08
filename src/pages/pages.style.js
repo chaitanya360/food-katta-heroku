@@ -13,7 +13,7 @@ export const FormStyle = styled.form`
   /* max-width: 700px; */
 
   .form-container {
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.3);
@@ -42,8 +42,8 @@ export const FormStyle = styled.form`
   }
 
   .fields-wrapper {
-    max-width:500px;
-    display: flex;
+    max-width:600px;
+    display: grid;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 2rem;
@@ -102,12 +102,35 @@ export const FormStyle = styled.form`
     }
 
     .error-msg {
+      opacity: 0.7;
+      font-size:0.9rem;
       position: absolute;
       display: block;
       color: red;
-      line-height: 2rem;
-      padding-left: 1rem;
+      line-height: 1.8rem;
+      background-color: white;
+      border-radius: 5px;
+      padding: 0 10px;
+      width: 100%;
+      box-shadow: 0px 1px 2px rgba(0,0,0.1);
+      :: before{
+        position:absolute;
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+        background-color:transparent;
+        border: 0.5rem solid transparent;
+        border-bottom-color:white;
+        top:-0.9rem;
+        left: 0px;
+      }
+
+      :hover{
+        opacity: 1;
+      }
     }
+
   }
   .submit-wrapper {
     width: 100%;

@@ -241,6 +241,21 @@ function SellerRegister(props) {
             </div>
             <div className="field">
               <span>
+                <img src={`${process.env.PUBLIC_URL}/images/icons/note.svg`} />
+                <input
+                  placeholder="FSSAI"
+                  type="text"
+                  //   value={number}
+                  //   onChange={(e) => setnumber(e.target.value)}
+                  //   onBlur={() => validateNumber()}
+                />
+                {/* {numberError.map((error) => (
+                  <span className="error-msg">{error}</span>
+                ))} */}
+              </span>
+            </div>
+            <div className="field">
+              <span>
                 <textarea
                   placeholder="Company Address"
                   type="text"
