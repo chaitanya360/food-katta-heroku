@@ -113,7 +113,7 @@ function SellerRegister(props) {
   return (
     <FormStyle onSubmit={handleRegister}>
       <div>
-        <div className="logo">FoodKatta</div>
+        {/* <div className="logo">FoodKatta</div> */}
         <div className="form-container">
           <div className="fields-wrapper">
             <div className="title">Create your selling account?</div>

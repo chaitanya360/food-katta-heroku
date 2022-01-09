@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
-export const LandingPageStyle = styled.section`
-  background-color: red;
-`;
+export const LandingPageStyle = styled.section``;
 
 export const FormStyle = styled.form`
-  background: var(--grd-form-pink-bg);
-  min-height: 100vh;
   padding: 1rem 0;
   height: 100%;
   width: 100%;

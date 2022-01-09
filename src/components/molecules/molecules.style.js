@@ -109,10 +109,10 @@ export const DropDownMenuStyle = styled.nav`
 
     li {
       padding: 1rem 2rem;
-      transition: all 300ms;
+      transition: all 200ms;
       cursor: pointer;
       :hover {
-        background: wheat;
+        transform: scale(1.2);
       }
       a {
         text-decoration: none;

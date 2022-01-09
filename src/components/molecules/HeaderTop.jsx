@@ -29,7 +29,7 @@ function HeaderTop(props) {
           </div>
           <div>
             <Link to="/register" className="no-dec">
-              Sin up
+              Sign up
             </Link>
           </div>
           <div>

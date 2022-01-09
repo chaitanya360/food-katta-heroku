@@ -4,7 +4,7 @@ import Router from "./Router";
 
 function App() {
   return (
-    <div style={{ minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh", background: "var(--grd-form-pink-bg)" }}>
       <Router />
     </div>
   );

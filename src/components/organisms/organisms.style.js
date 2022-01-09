@@ -1,24 +1,23 @@
 import styled from "styled-components";
 
-export const HeroSectionStyle = styled.section`
+export const HeroSectionStyle = styled.div`
   background: var(--grd-hero-bg);
-  width: 100vw;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 2fr;
+  place-items: center;
 
   img {
-    height: 80%;
+    height: 60vh;
     width: auto;
     object-fit: contain;
     margin: auto;
   }
 
   .right-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    place-items: center;
     height: 100%;
     max-width: 500px;
     .title {
@@ -39,7 +38,7 @@ export const HeroSectionStyle = styled.section`
     .text {
       margin: 1rem 0;
       font-wight: 900;
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 23px;
       text-align: center;
     }
@@ -98,10 +97,43 @@ export const HeroSectionStyle = styled.section`
 
 export const HeaderStyle = styled.header`
   position: sticky;
+  top: 0;
   background-color: white;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-  top: 0;
   display: flex;
   z-index: 999;
   flex-direction: column;
+`;
+
+export const CarouselStyle = styled.section`
+  /* height: 70vh; */
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    padding: 1rem;
+    user-select: none;
+    cursor: pointer;
+    img {
+      width: 25px;
+      height: 25px;
+      color: red;
+    }
+  }
+
+  .next {
+    right: 0;
+  }
+  .prev {
+    left: 0;
+  }
+`;
+
+export const ProductsSliderStyle = styled.section`
+  height: fit-content;
+  background-color: white;
 `;

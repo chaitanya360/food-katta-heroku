@@ -56,7 +56,7 @@ function Login(props) {
   return (
     <FormStyle onSubmit={handleLogin}>
       <div>
-        <div className="logo">FoodKatta</div>
+        {/* <div className="logo">FoodKatta</div> */}
         <div className="form-container">
           <div className="fields-wrapper">
             <div className="title">Sign In</div>
