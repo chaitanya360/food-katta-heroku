@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderBottomStyle = styled.div`
+  position: sticky;
+  top: 0;
   height: 3rem;
   width: 100%;
   height: 100%;
@@ -30,7 +32,9 @@ export const HeaderBottomStyle = styled.div`
 `;
 
 export const HeaderTopStyle = styled.div`
-  min-height: 5rem;
+  height: 5rem;
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   padding: 0 2rem;
@@ -130,5 +134,87 @@ export const DropDownMenuStyle = styled.nav`
   #touch:checked + .slide {
     height: 308px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  }
+`;
+
+export const ProductCardStyle = styled.div`
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 1rem;
+  background: white;
+  width: 100%;
+  display: flex;
+  height: 230px;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: all 200ms;
+  .img-wrapper {
+    width: 150px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    img {
+      width: 150px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 2rem 1rem 0 1rem;
+    .category {
+      color: #706c67;
+      padding: 1rem 0;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      margin: 0.3rem 0;
+    }
+    .rate {
+      margin: 0.3rem 0;
+      color: #306c77;
+    }
+
+    .buttons {
+      /* margin: 2rem 1rem; */
+      display: flex;
+      align-items: center;
+      transition: all 200ms;
+      transform: scale(0);
+      .btn {
+        transition: all 200ms;
+        width: 35px;
+        height: 35px;
+        border-radius: 20%;
+        display: grid;
+        place-items: center;
+        margin: 0.5rem;
+        cursor: pointer;
+
+        img {
+          height: auto;
+          width: 20px;
+          object-fit: contain;
+          transform: translateX(1px);
+        }
+
+        :hover {
+          background: #e1e4232e;
+        }
+      }
+    }
+  }
+
+  :hover .buttons {
+    transform: scale(1.2);
+  }
+  :hover {
+    box-shadow: 0px 0px 4px var(--clr-primary);
   }
 `;

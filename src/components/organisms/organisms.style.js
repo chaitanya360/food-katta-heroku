@@ -136,4 +136,36 @@ export const CarouselStyle = styled.section`
 export const ProductsSliderStyle = styled.section`
   height: fit-content;
   background-color: white;
+  padding-top: 2rem;
+  .arrow {
+    z-index: 3;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev {
+    left: 0;
+  }
+`;
+
+export const BrowseProductsStyle = styled.div`
+  padding: 2.4rem 0;
+
+  .products {
+    padding: 1rem 0;
+    display: flex;
+  }
 `;

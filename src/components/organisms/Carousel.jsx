@@ -13,7 +13,10 @@ function Carousel(props) {
         selectedItem={selectedItem}
         showArrows
         infiniteLoop
+        autoPlay
+        interval={3000}
         showThumbs={false}
+        showStatus={false}
         renderArrowNext={() => (
           <div
             className="arrow next"

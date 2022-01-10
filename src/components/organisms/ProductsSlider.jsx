@@ -13,10 +13,30 @@ const settings = {
   slidesToScroll: 1,
 };
 
+const PrevArrow = ({ onClick }) => (
+  <div className="arrow prev" onClick={onClick}>
+    <img src={`${process.env.PUBLIC_URL}/images/icons/prev.svg`} />
+  </div>
+);
+
+const NextArrow = ({ onClick }) => (
+  <div className="arrow next" onClick={onClick}>
+    <img src={`${process.env.PUBLIC_URL}/images/icons/next.svg`} />
+  </div>
+);
+
 function ProductsSlider(props) {
   return (
     <ProductsSliderStyle>
-      <Slider {...settings} arrows={false} autoplay autoplaySpeed={3000}>
+      <div className="section-title">Top Categories</div>
+      <Slider
+        {...settings}
+        autoplay
+        autoplaySpeed={3000}
+        nextArrow={<NextArrow />}
+        prevArrow={<PrevArrow />}
+        dots={false}
+      >
         <SliderProduct src={1} />
         <SliderProduct src={2} />
         <SliderProduct src={3} />
