@@ -138,16 +138,18 @@ export const DropDownMenuStyle = styled.nav`
 `;
 
 export const ProductCardStyle = styled.div`
+  position: relative;
   cursor: pointer;
   border-radius: 20px;
   margin: 1rem;
+  margin-bottom: 3rem;
   background: white;
-  width: 100%;
-  display: flex;
-  height: 230px;
-  align-items: center;
-  border: 1px solid transparent;
+  height: fit-content;
   transition: all 200ms;
+  .top {
+    display: flex;
+    align-items: center;
+  }
   .img-wrapper {
     width: 150px;
     height: 100%;
@@ -166,7 +168,7 @@ export const ProductCardStyle = styled.div`
     flex-direction: column;
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 2rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
     .category {
       color: #706c67;
       padding: 1rem 0;
@@ -215,6 +217,36 @@ export const ProductCardStyle = styled.div`
     transform: scale(1.2);
   }
   :hover {
+    /* padding-bottom: 2rem; */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     box-shadow: 0px 0px 4px var(--clr-primary);
+  }
+
+  :hover .buy-btn {
+    height: fit-content;
+    padding: 0.6rem 0.4rem;
+    border: 2px solid var(--clr-primary);
+  }
+
+  .buy-btn {
+    transition: 200ms linear;
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(100%);
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-primary);
+    color: white;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    :hover {
+      opacity: 0.9;
+    }
   }
 `;

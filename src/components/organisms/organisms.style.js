@@ -162,10 +162,67 @@ export const ProductsSliderStyle = styled.section`
 `;
 
 export const BrowseProductsStyle = styled.div`
-  padding: 2.4rem 0;
+  padding: 3.4rem 0;
+  padding-bottom: 3rem;
 
   .products {
     padding: 1rem 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+
+export const FooterStyle = styled.footer`
+  width: 100%;
+  background-color: #232f3e;
+  color: white;
+
+  .top {
+    display: flex;
+    padding: 5rem 0;
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+
+    .item-wrapper {
+      width: 100%;
+
+      .item-body {
+        width: fit-content;
+        margin: auto;
+      }
+      .title {
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+      }
+
+      .item {
+        padding: 0.2rem 0;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .bottom {
+    background-color: #131a22;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    .item {
+      margin: 0 2rem;
+      padding: 0.8rem;
+    }
+    span {
+      display: inline-block;
+      text-align: center;
+      background-color: white;
+      border-radius: 50%;
+      color: black;
+      padding: 0.1rem 0.4rem;
+      line-height: 20px;
+      margin: 0 5px;
+    }
   }
 `;

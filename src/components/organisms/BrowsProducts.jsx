@@ -11,6 +11,10 @@ function BrowsProducts(props) {
         <ProductCard />
         <ProductCard />
         <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </div>
     </BrowseProductsStyle>
   );
