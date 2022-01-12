@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useResolvedPath } from "react-router-dom";
-import { FormStyle } from "./pages.style";
+import { FormStyle } from "./form.style";
 
 function Login(props) {
   // input states

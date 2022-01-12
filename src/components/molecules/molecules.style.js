@@ -198,10 +198,11 @@ export const ProductCardStyle = styled.div`
         place-items: center;
         margin: 0.5rem;
         cursor: pointer;
+        padding: 8px;
 
         img {
-          height: auto;
-          width: 20px;
+          height: 100%;
+          width: 100%;
           object-fit: contain;
           transform: translateX(1px);
         }
@@ -247,6 +248,120 @@ export const ProductCardStyle = styled.div`
     border-bottom-right-radius: 10px;
     :hover {
       opacity: 0.9;
+    }
+  }
+`;
+
+export const ProductViewerStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  .viewer {
+    display: flex;
+    justify-containt: center;
+    height: 500px;
+    padding: 3rem;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .img-selector {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    .thumb {
+      width: 100px;
+      height: 100px;
+      border: 2px solid rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      margin: 1rem;
+      padding: 0.4rem;
+      cursor: pointer;
+      :hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: all 200ms;
+      }
+    }
+  }
+`;
+
+export const ProductQuantitySelectionStyle = styled.div`
+  padding: 4rem;
+  padding-top: 4rem;
+  max-width: 400px;
+  width: 100%;
+  .title {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .unit-selectors {
+    display: flex;
+    padding: 1rem 0;
+    div {
+      transition: all 100ms linear;
+    }
+    .unit {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 0.2rem 0.4rem;
+      margin-right: 1rem;
+      width: fit-content;
+      cursor: pointer;
+    }
+    .selected {
+      border: 1px solid tomato;
+      background-color: rgba(255, 0, 0, 0.2);
+    }
+  }
+
+  .quantity-selector {
+    span {
+      margin-right: 1rem;
+    }
+
+    select {
+      font-size: 1rem;
+    }
+
+    option {
+      font-size: 1rem;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.2rem;
+    div {
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      color: var(--clr-primary);
+      margin-top: 1rem;
+      padding: 0.4rem;
+    }
+    .buy {
+      background-color: #ff2525;
+      color: white;
     }
   }
 `;

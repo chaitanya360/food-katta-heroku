@@ -53,3 +53,49 @@ export const SliderProductStyle = styled.div`
     margin-top: 1rem;
   }
 `;
+
+export const ProductInfoStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  max-width: 400px;
+  width: 100%;
+  .name {
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .by {
+    font-size: 1rem;
+    span {
+      color: tomato;
+    }
+  }
+
+  .rating {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    .reviews {
+      font-size: 0.9;
+      padding-left: 0.4rem;
+    }
+  }
+
+  .price {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .desc-container {
+    padding-top: 1rem;
+    font-size: 1rem;
+    div {
+      border-bottom: 1px solid black;
+      width: fit-content;
+      margin: 0.4rem 0;
+      font-weight: 500;
+    }
+  }
+`;

@@ -226,3 +226,13 @@ export const FooterStyle = styled.footer`
     }
   }
 `;
+
+export const ProductSectionStyle = styled.section`
+  /* display: grid;
+  grid-template-columns: 3fr 2fr 2fr; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+`;

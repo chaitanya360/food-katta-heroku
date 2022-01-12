@@ -1,4 +1,5 @@
 import "./App.css";
+import ProductPage from "./pages/ProductPage";
 import Router from "./Router";
 // import "./assets/scss/auth.scss";
 
