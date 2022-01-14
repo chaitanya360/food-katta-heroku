@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FooterStyle } from "./organisms.style";
 
 function Footer(props) {
@@ -11,6 +12,11 @@ function Footer(props) {
             <div className="item">About Us</div>
             <div className="item">Careers</div>
             <div className="item">Foodkatta Cares</div>
+            <div className="item">
+              <Link to="/seller-register" className="no-dec">
+                Seller Register
+              </Link>
+            </div>
           </div>
         </div>
         <div className="item-wrapper">

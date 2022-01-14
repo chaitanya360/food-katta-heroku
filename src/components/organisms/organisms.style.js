@@ -135,8 +135,8 @@ export const CarouselStyle = styled.section`
 
 export const ProductsSliderStyle = styled.section`
   height: fit-content;
-  background-color: white;
   padding-top: 2rem;
+  margin: 0 2rem;
   .arrow {
     z-index: 3;
     top: 0;
@@ -153,11 +153,11 @@ export const ProductsSliderStyle = styled.section`
   }
 
   .next {
-    right: 0;
+    right: -2.5rem;
   }
 
   .prev {
-    left: 0;
+    left: -2.5rem;
   }
 `;
 

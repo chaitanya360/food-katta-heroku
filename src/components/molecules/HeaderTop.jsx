@@ -32,11 +32,6 @@ function HeaderTop(props) {
               Sign up
             </Link>
           </div>
-          <div>
-            <Link to="/seller-register" className="no-dec">
-              Seller Register
-            </Link>
-          </div>
         </div>
         <CartLogo />
       </div>

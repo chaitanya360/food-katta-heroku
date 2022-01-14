@@ -270,6 +270,14 @@ export const ProductViewerStyle = styled.div`
       object-fit: contain;
     }
   }
+  .fade-out {
+    transform: scale(0);
+    animation: scale-out 200ms;
+  }
+
+  .fade-in {
+    animation: scale-in 200ms;
+  }
 
   .img-selector {
     display: flex;
@@ -296,6 +304,9 @@ export const ProductViewerStyle = styled.div`
         object-fit: contain;
         transition: all 200ms;
       }
+    }
+    .selected {
+      border-color: var(--clr-primary);
     }
   }
 `;
